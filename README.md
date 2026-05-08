@@ -1,3 +1,7 @@
+## 🌐 Live Demo
+
+Visit the live application: [MACH App - Production](https://mach-practical-task-ph6mdw31o-ilijevskis-projects.vercel.app/)
+
 # MACH App - Trading & Financial Education Platform
 
 This is a [Next.js](https://nextjs.org) project built with modern web technologies for an e-commerce and educational platform focused on trading and financial mastery.
