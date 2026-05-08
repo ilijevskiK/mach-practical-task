@@ -27,7 +27,7 @@ export const useFetchProjects = () => {
             const books = response.items.map(item => {
                 const { title, image, description, availability, price } = item.fields;
                 const id = item.sys.id;
-                const img = image?.fields?.file?.url
+                const img = image?.fields?.file?.url || null;
 
                 return { title, id, img, description, availability, price };
             });
