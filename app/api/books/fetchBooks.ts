@@ -27,7 +27,11 @@ export const useFetchProjects = () => {
             const books = response.items.map(item => {
                 const { title, image, description, availability, price } = item.fields;
                 const id = item.sys.id;
-                const img = image?.fields?.file?.url || null;
+                
+                // Type guard: check if image is an object with fields property
+                const img = (image && typeof image === 'object' && 'fields' in image) 
+                    ? ((image as { fields: { file: { url: string } } }).fields?.file?.url)
+                    : undefined;
 
                 return { title, id, img, description, availability, price };
             });
