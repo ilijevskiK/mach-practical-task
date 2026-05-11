@@ -4,7 +4,7 @@ import { createClient } from "contentful";
 const client = createClient({
     space: "e9gkiwaib10m",
     environment: "master",
-    accessToken: process.env.VITE_API_KEY || "bS6viLjKyqGxdlBf0ehcbxX7OflNFwZyLppUOXPy9kc",
+    accessToken: process.env.NEXT_PUBLIC_API_KEY || "",
 });
 
 interface Book {
